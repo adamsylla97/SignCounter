@@ -13,7 +13,7 @@ import java.util.regex.Pattern;
 
 @RestController
 @RequestMapping("/")
-public class ReverserController {
+public class SignCounterController {
 
     Pattern normalLetter = Pattern.compile("[a-z]");
     Pattern capitalLetter = Pattern.compile("[A-Z]");
