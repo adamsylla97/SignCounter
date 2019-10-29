@@ -1,0 +1,29 @@
+Intrukcja obslugi:
+1) Uruchamiamy aplikacje za pomoca klasy DemoApplication.
+2) Po uruchomieniu projektu mozemy za pomoca przegladarki dostac sie do endpointa.
+
+Zapytanie:
+localhost:8080/stringInformation/{value}
+
+Parametry
+value - przekazany string z ktorego beda zliczane znaki
+
+W odpowiedzi otrzymamy stringa zawierajacego informacje na temat przekazanej wartosci:
+Normal letters - ilosc malych liter
+Capital letters - ilosc wielkich liter
+Digits - ilosc cyfr
+Special letters - ilosc znakow specjalnych
+
+Przykladowe zapytania:
+
+http://localhost:8080/stringInformation/abc123
+Odpowiedz:
+String contains: Normal letters: 3 Capital letters: 0 Digits: 3 Special letters: 0
+
+http://localhost:8080/stringInformation/qwerty!!*123QWE
+Odpowiedz:
+String contains: Normal letters: 6 Capital letters: 3 Digits: 3 Special letters: 3
+
+http://localhost:8080/stringInformation/QWE123((&*
+Odpowiedz:
+String contains: Normal letters: 0 Capital letters: 3 Digits: 3 Special letters: 4
