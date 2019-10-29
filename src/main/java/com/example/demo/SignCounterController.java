@@ -20,7 +20,7 @@ public class SignCounterController {
     Pattern digit = Pattern.compile("\\d");
 
     @GetMapping("stringInformation/{value}")
-    public String reverseString(@PathVariable String value){
+    public String countSigns(@PathVariable String value){
 
         System.out.println(value);
 
